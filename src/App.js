@@ -1,24 +1,15 @@
-import logo from './logo.svg';
+import logo from './Assets/DAO-Group-original-logo-192x192-icon.png.svg';
 import './App.css';
+import { Route, Routes } from 'react-router';
+import MainPage from './Pages/MainPage/MainPage';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/' element={<MainPage />}/>
+    </Routes>
   );
 }
 

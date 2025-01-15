@@ -1,0 +1,20 @@
+.header-top_section{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts-container{
+    display: flex;
+    gap: 30px;
+}
+
+.contacts-container p{
+    margin: 0;
+}
+
+.header-top_section_wrapper{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+}
