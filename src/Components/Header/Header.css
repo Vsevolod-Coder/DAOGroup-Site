@@ -124,6 +124,7 @@
 .logo{
     width: 196.88px;
     height: 70px;
+    cursor: pointer;
 }
 
 .nav {
