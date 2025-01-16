@@ -12,12 +12,8 @@ const Header = () => {
                     <Link to="https://2gis.kg/bishkek/firm/70000001053024609">Кыргызстан, г. Бишкек, пр. Чуй 147, офис 1</Link>
                 </div>
                 <div className="contacts-container">
-                    <div className="mail-block">
-                        <Link to='mailto:info@daogroup.pro'>info@daogroup.pro</Link>
-                    </div>
-                    <div className="number-block">
-                        <p>+996 (312) 900 200</p>
-                    </div>
+                    <Link to='mailto:info@daogroup.pro'>info@daogroup.pro</Link>
+                    <p>+996 (312) 900 200</p>
                 </div>
             </div>
         </div>
