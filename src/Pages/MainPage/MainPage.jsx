@@ -1,11 +1,13 @@
 import React from 'react'
-import "./MainPage.css"
-import Layout from '../../Layout/Layout'
+import Layout from '../../Layout/Layout';
+import Preview from '../../components/Preview/Preview';
 
 const MainPage = () => {
   return (
-      <Layout></Layout>
-  );
+    <Layout>
+      <Preview />
+    </Layout>
+  )
 }
 
-export default MainPage
+export default MainPage;
