@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import mbank from "../../Assets/letter_mbank.jpg"
 import mbank2 from "../../Assets/letter_mbank02.jpg"
 import idlo from "../../Assets/(b)idlo.jpg"
+import beeline from "../../Assets/beeline.jpg"
 
 // Import Swiper styles
 import 'swiper/css';
