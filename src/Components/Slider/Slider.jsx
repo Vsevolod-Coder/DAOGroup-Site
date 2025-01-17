@@ -44,127 +44,142 @@ import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 import { LuVegan } from "react-icons/lu";
 
 const Slider = () => {
+    const pagination = {
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + '</span>';
+        },
+      };
   return (
-    <div>
-      <Swiper
-        loop="true"
-        autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[Autoplay, EffectCoverflow, Pagination]}
-        className="mySwiper"
+    <section className="slider-container">
+        <div className="top-slicer"></div>
+        <div className="letters-container">
+            <h2 className="letters-title">Наши достижения в словах клиентов</h2>
+            {/* <h2 className="letters-title">Письма благодарности</h2>
+            <h2 className="letters-title">Отзывы и признания</h2> */}
+        </div>
+        <div className="top-slicer"></div>
+        <Swiper
+            loop="true"
+            autoplay={{
+                delay: 500,
+                disableOnInteraction: false,
+            }}
+            effect={"coverflow"}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={3}
+            coverflowEffect={{
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            }}
+            speed={5000}
+            pagination={pagination}
+            modules={[Autoplay, EffectCoverflow, Pagination]}
+            className="mySwiper"
       >
-        <SwiperSlide>
-          <img src={mbank} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={mbank2} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={idlo} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={abank} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={kicb} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={beeline} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={bp} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={aris} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={btb} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={bpc} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={db} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={dcb} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={deloitte} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={deloitte2} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={fcb} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={gts} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={ipc} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={apparat} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={demir} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={mountain} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={ukc} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={mega} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={meria_osh} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={nuts} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={nurtel} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={pepsico} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={rsk} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={sgs} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={skynet} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={tamozhnya} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={giz} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={electro} />
-        </SwiperSlide>
-      </Swiper>
-    </div>
+            <SwiperSlide className="element">
+                <img src={mbank} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={mbank2} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={idlo} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={abank} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={kicb} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={beeline} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={bp} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={aris} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={btb} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={bpc}  className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={db} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={dcb} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={deloitte} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={deloitte2} className="slide-image" />
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={fcb} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={gts} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={ipc} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={apparat} className="slide-image" />
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={demir} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={mountain} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={ukc} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={mega} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={meria_osh} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={nuts} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={nurtel} className="slide-image" />
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={pepsico} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={rsk} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={sgs} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={skynet} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={tamozhnya} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={giz} className="slide-image"/>
+            </SwiperSlide>
+            <SwiperSlide className="element">
+                <img src={electro} className="slide-image"/>
+            </SwiperSlide>
+        </Swiper>
+    <div className="bottom-slicer"></div>
+    </section>
   );
 };
 

@@ -1,0 +1,40 @@
+.footer{
+    margin: 0;
+    padding: 5%;
+    background-color: #034ea2;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1700px;
+    margin: 0 auto;
+
+}
+
+.footer-contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-contacts a{
+    color: #b4cae3;
+text-decoration: none;
+font-family: "Montserrat", sans-serif;
+font-size: 16px;
+}
+
+.footer-navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-navigation a{
+    text-decoration: none;
+font-family: "Montserrat", sans-serif;
+font-size: 18px;    
+color: #b4cae3;
+
+}

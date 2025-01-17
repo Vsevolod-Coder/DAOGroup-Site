@@ -46,7 +46,7 @@
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    max-width: 1200px;
+    max-width: 1700px;
     margin: 0 auto; 
 }
 
@@ -60,12 +60,17 @@
     display: flex;
     align-items: center;
 }
-  
+
 .address-block a {
     text-decoration: none;
     color: #b4cae3;
     font-family: "Montserrat", sans-serif;
     font-size: 13px;
+    transition: 0.5s;
+}
+
+.address-block a:hover{
+    color: #ffffff;
 }
 
 /* Contacts container styles   */
@@ -101,6 +106,14 @@
     height: 18px;
 }
 
+.mail-block a{
+    transition: 0.5s;
+}
+
+.mail-block a:hover{
+    color: #ffffff;
+}
+
 .phone-block{
     display: flex;
     align-items: center;
@@ -111,12 +124,20 @@
     color: #b4cae3;
 }
 
+.phone-block a:hover{
+    color: #ffffff;
+}
+
+.phone-block a{
+    transition: 0.5s;
+}
+
 /* Navigation styles */
 .nav-block{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1700px;
     margin: 0 auto;
     padding: 1% 0 1% 0;
 }
@@ -138,4 +159,9 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 470;
     font-size: larger;
+    transition: 0.5s;
+}
+
+.nav a:hover{
+    color: #b4cae3
 }
