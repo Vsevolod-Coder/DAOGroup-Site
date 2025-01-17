@@ -1,13 +1,8 @@
-import React from 'react'
-import Layout from '../../Layout/Layout';
-import Preview from '../../components/Preview/Preview';
+import React from "react";
+import Layout from "../../Layout/Layout";
 
 const MainPage = () => {
-  return (
-    <Layout>
-      <Preview />
-    </Layout>
-  )
-}
+  return <Layout></Layout>;
+};
 
 export default MainPage;
