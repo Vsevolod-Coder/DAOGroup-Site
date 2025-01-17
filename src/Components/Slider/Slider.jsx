@@ -1,26 +1,29 @@
-import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import mbank from "../../Assets/letter_mbank.jpg"
-import mbank2 from "../../Assets/letter_mbank02.jpg"
-import idlo from "../../Assets/(b)idlo.jpg"
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import mbank from "../../Assets/letter_mbank.jpg";
+import mbank2 from "../../Assets/letter_mbank02.jpg";
+import idlo from "../../Assets/(b)idlo.jpg";
+import abank from "../../Assets/aiyl-bank.jpg";
+import kicb from "../../Assets/KICB-rekomend.jpg";
+import beeline from "../../Assets/beeline.jpg";
+import bp from "../../Assets/bp.jpg";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import "./Slider.css"
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "./Slider.css";
 
-import { EffectCoverflow, Pagination } from 'swiper/modules';
-
+import { EffectCoverflow, Pagination } from "swiper/modules";
 
 const Slider = () => {
   return (
     <div>
       <Swiper
-        effect={'coverflow'}
+        effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={'auto'}
+        slidesPerView={"auto"}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -33,13 +36,13 @@ const Slider = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="" />
+          <img src={mbank} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          <img src={mbank2} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          <img src={idlo} />
         </SwiperSlide>
         <SwiperSlide>
           <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
@@ -61,7 +64,7 @@ const Slider = () => {
         </SwiperSlide>
       </Swiper>
     </div>
-  )
-}
+  );
+};
 
-export default Slider
+export default Slider;
