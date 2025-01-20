@@ -14,6 +14,7 @@ const Footer = () => {
             <img src={Logo} alt="Logo" className='logo'/>
         </div>
         <div className='footer-contacts'>
+            <div></div>
             <div className='address-footer-block'>
                 <SlLocationPin className='map-marker' />
                 <Link className='address-footer' to="https://2gis.kg/bishkek/firm/70000001053024609" target="blank">Кыргызстан, г. Бишкек, пр. Чуй 147, офис 1</Link>
