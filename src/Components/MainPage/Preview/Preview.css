@@ -24,12 +24,14 @@
 h1{
     font-size: 60px;
     margin: 0;
+    cursor: default;
 }
 
 .Preview-h2{
     font-size: 25px;
     font-weight: 200;
     margin: 0;
+    cursor: default;
 }
 
 .Preview-button{

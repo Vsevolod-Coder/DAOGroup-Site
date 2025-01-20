@@ -48,7 +48,6 @@ const Header = () => {
       <div className="secret">
         <div className="secret-message">It's DAGroup baby</div>
         <img className="secret-message" src={Cock} alt="Roach" />
-        <audio src=""></audio>
       </div>
     </header>
   );

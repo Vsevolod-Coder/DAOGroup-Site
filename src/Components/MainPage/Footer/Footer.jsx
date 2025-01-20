@@ -68,7 +68,11 @@ const Footer = () => {
         </div>
       </section>
       <section className='footer-bottom'>
-        <div className='footer-copyrights'>DAO Group • Сервис ориентированный системный интегратор<br /><p> © 2018-2025 Все права защищены</p></div>
+        <div className='footer-bottom-wrapper'>
+          <div className='footer-copyright-block'>
+            <div className='footer-copyrights'>DAO Group • Сервис ориентированный системный интегратор<br /><p> © 2018-2025 Все права защищены</p></div>
+          </div>
+        </div>
       </section>
     </footer>
   )
