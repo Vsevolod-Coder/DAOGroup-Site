@@ -4,8 +4,8 @@ import { Link } from "react-router";
 import { SlLocationPin } from "react-icons/sl";
 import { CiMail } from "react-icons/ci";
 import { FaPhoneAlt } from "react-icons/fa";
-import Logo from "../../Assets/DAO-Group-original-black-logo.png.png"
-import Cock from "../../Assets/dancing-cock.gif"
+import Logo from "../../../Assets/DAO-Group-original-black-logo.png.png"
+import Cock from "../../../Assets/dancing-cock.gif"
 
 
 const Header = () => {

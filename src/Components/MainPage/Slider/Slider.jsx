@@ -1,37 +1,37 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import mbank from "../../Assets/letter_mbank.jpg";
-import mbank2 from "../../Assets/letter_mbank02.jpg";
-import idlo from "../../Assets/(b)idlo.jpg";
-import abank from "../../Assets/aiyl-bank.jpg";
-import kicb from "../../Assets/KICB-rekomend.jpg";
-import beeline from "../../Assets/beeline.jpg";
-import bp from "../../Assets/bp.jpg";
-import aris from "../../Assets/letter_aris.jpg";
-import bpc from "../../Assets/bpc.jpg";
-import btb from "../../Assets/btb.jpg";
-import db from "../../Assets/db2.jpg";
-import dcb from "../../Assets/dcb.jpg";
-import deloitte from "../../Assets/deloitte.jpg";
-import deloitte2 from "../../Assets/deloitte02.jpg";
-import fcb from "../../Assets/fcb.jpg";
-import gts from "../../Assets/gts.jpg";
-import ipc from "../../Assets/ipc.jpg";
-import apparat from "../../Assets/letter_apparat.jpg";
-import demir from "../../Assets/letter_dbank.jpg";
-import mountain from "../../Assets/letter_mountain.jpg";
-import ukc from "../../Assets/letter_ukc.jpg";
-import mega from "../../Assets/mega.jpg";
-import meria_osh from "../../Assets/meria-osh.jpg";
-import nuts from "../../Assets/nutsleasing.jpg";
-import nurtel from "../../Assets/oshka.jpg";
-import pepsico from "../../Assets/pepsico.jpg";
-import rsk from "../../Assets/rsk.jpg";
-import sgs from "../../Assets/sgs.jpg";
-import skynet from "../../Assets/skynet.jpg";
-import tamozhnya from "../../Assets/tamozhnya.jpg";
-import giz from "../../Assets/giz.jpeg";
-import electro from "../../Assets/osh-electro.jpg";
+import mbank from "../../../Assets/letter_mbank.jpg";
+import mbank2 from "../../../Assets/letter_mbank02.jpg";
+import idlo from "../../../Assets/(b)idlo.jpg";
+import abank from "../../../Assets/aiyl-bank.jpg";
+import kicb from "../../../Assets/KICB-rekomend.jpg";
+import beeline from "../../../Assets/beeline.jpg";
+import bp from "../../../Assets/bp.jpg";
+import aris from "../../../Assets/letter_aris.jpg";
+import bpc from "../../../Assets/bpc.jpg";
+import btb from "../../../Assets/btb.jpg";
+import db from "../../../Assets/db2.jpg";
+import dcb from "../../../Assets/dcb.jpg";
+import deloitte from "../../../Assets/deloitte.jpg";
+import deloitte2 from "../../../Assets/deloitte02.jpg";
+import fcb from "../../../Assets/fcb.jpg";
+import gts from "../../../Assets/gts.jpg";
+import ipc from "../../../Assets/ipc.jpg";
+import apparat from "../../../Assets/letter_apparat.jpg";
+import demir from "../../../Assets/letter_dbank.jpg";
+import mountain from "../../../Assets/letter_mountain.jpg";
+import ukc from "../../../Assets/letter_ukc.jpg";
+import mega from "../../../Assets/mega.jpg";
+import meria_osh from "../../../Assets/meria-osh.jpg";
+import nuts from "../../../Assets/nutsleasing.jpg";
+import nurtel from "../../../Assets/oshka.jpg";
+import pepsico from "../../../Assets/pepsico.jpg";
+import rsk from "../../../Assets/rsk.jpg";
+import sgs from "../../../Assets/sgs.jpg";
+import skynet from "../../../Assets/skynet.jpg";
+import tamozhnya from "../../../Assets/tamozhnya.jpg";
+import giz from "../../../Assets/giz.jpeg";
+import electro from "../../../Assets/osh-electro.jpg";
 
 
 // Import Swiper styles
@@ -54,9 +54,7 @@ const Slider = () => {
     <section className="slider-container">
         <div className="top-slicer"></div>
         <div className="letters-container">
-            <h2 className="letters-title">Наши достижения в словах клиентов</h2>
-            {/* <h2 className="letters-title">Письма благодарности</h2>
-            <h2 className="letters-title">Отзывы и признания</h2> */}
+            <h2 className="letters-title">Отзывы наших партнёров</h2>
         </div>
         <div className="top-slicer"></div>
         <Swiper
