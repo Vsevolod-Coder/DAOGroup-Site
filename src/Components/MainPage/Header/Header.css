@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.secret-message{
+    text-align: center;
+    font-size: 100px;
+    font-weight: 500;
+    animation: textColor 1s infinite;
+    display: none;
+}
+
+.secret{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes textColor{
+    0%{
+        color: red;
+    }
+
+    25%{
+        color: blue;
+    }
+
+    50%{
+        color: yellow; 
+    }
+
+    75%{
+        color: violet;
+    }
+
+    100%{
+        color: green;
+    }
+}
+
+.header-top_section{
+    background-color: #034ea2;
+    padding: 0.547% 0 0.547% 0;
+}
+
+.header-top_section_wrapper {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1700px;
+    margin: 0 auto; 
+}
+
+
+/* Address block styles */
+.map-marker{
+    color: #b4cae3;
+}
+
+.address-block{
+    display: flex;
+    align-items: center;
+}
+
+.address-block a {
+    text-decoration: none;
+    color: #b4cae3;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    transition: 0.5s;
+}
+
+.address-block a:hover{
+    color: #ffffff;
+}
+
+/* Contacts container styles   */
+.contacts-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #b4cae3;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+}
+
+.contacts-container a {
+    text-decoration: none;
+    color: #b4cae3;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+}
+
+.contacts-container p {
+    margin: 0;
+}
+
+.mail-block{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.mail{
+    color: #b4cae3;
+    width: 18px;
+    height: 18px;
+}
+
+.mail-block a{
+    transition: 0.5s;
+}
+
+.mail-block a:hover{
+    color: #ffffff;
+}
+
+.phone-block{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.phone{
+    color: #b4cae3;
+}
+
+.phone-block a:hover{
+    color: #ffffff;
+}
+
+.phone-block a{
+    transition: 0.5s;
+}
+
+/* Navigation styles */
+.nav-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 1% 0 1% 0;
+}
+
+.logo{
+    width: 196.88px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 470;
+    font-size: larger;
+    transition: 0.5s;
+}
+
+.nav a:hover{
+    color: #b4cae3
+}

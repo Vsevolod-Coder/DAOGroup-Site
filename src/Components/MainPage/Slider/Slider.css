@@ -1,0 +1,53 @@
+.top-slicer{
+    height: 100px;
+    width: 1px;
+    margin: 0 50% 0 50%;
+    background-color: #0082b8;
+}
+
+.slider-container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    gap: 20px;
+}
+
+.letters-container{
+    display: flex;
+    justify-content: center;
+    padding: 0 5% 0 5%;
+    text-align: center;
+    color: #0082b8;
+    font-family: "Montserrat", sans-serif;
+    cursor: default;
+}
+
+.letters-title{
+    padding: 20px;
+    width: 40%;
+    border: 1px solid #0082b8;
+    border-radius: 15px;
+    margin: 0px;
+}
+
+.mySwiper{
+    max-width: 80%;
+    border-top: 1px solid #0082b8;
+    border-bottom: 1px solid #0082b8;
+    border-radius: 5px;
+    padding: 2% 0 2% 0;
+}
+
+.slide-image{
+    width: 100%;
+    height: auto;
+}
+
+.bottom-slicer{
+    background: linear-gradient(90deg, rgba(3,78,162,1) 0%, rgba(2,98,170,0.7791491596638656) 64%, rgba(0,130,184,1) 100%);
+    height: 100px;
+    width: 2px;
+    margin: 0 50% 0 50%;
+    display: flex;
+    flex-direction: column;
+}
