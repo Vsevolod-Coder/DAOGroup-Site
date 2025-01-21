@@ -1,0 +1,16 @@
+.content-block{
+    display: flex;
+    max-width: 100%;
+}
+
+.content-img-block{
+    width: 50%;
+}
+
+.content-text-block{
+    width: 50%;
+}
+
+.content-img-block img{
+    width: 100%;
+}
