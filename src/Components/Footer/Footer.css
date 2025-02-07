@@ -4,14 +4,18 @@
 
 .footer-top{
     margin: 0;
-    padding: 3% 5% 5% 5%;
+    padding: 3% 0 0 0;
+    max-width: 100%;
+}
+
+.footer-wrapper-block{
+    margin: 0 auto;
 }
 
 .footer-wrapper{
     display: flex;
-    justify-content: space-around;
-    max-width: 1700px;
-    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 15% 3% 15%;
 }
 
 .footer-logo{
@@ -210,18 +214,17 @@
 }
 
 .footer-bottom{
-    display: flex;
     background-color: #004088;
 }
 
 .footer-bottom-wrapper{
     margin: 0;
-    max-width: 1700px;
-    padding: 0.841% 5% 0.841% 13.3%;
 }
 
 .footer-copyright-block{
-    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 .footer-copyrights{
@@ -229,6 +232,7 @@
     font-family: "Montserrat", sans-serif;
     font-size: 15px; 
     cursor: default;
+    padding: 0.841% 0 0.841% 15%;
 }
 
 .footer-bottom div{

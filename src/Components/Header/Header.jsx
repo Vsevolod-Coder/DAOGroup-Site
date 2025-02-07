@@ -15,8 +15,10 @@ const Header = () => {
           <div className="header-top_section_wrapper">
             <div className="address-block">
               <SlLocationPin className="map-marker" />
-              {/* <SlLocationPin className="map-marker"/> */}
-              <Link to="https://2gis.kg/bishkek/firm/70000001053024609">
+              <Link
+                to="https://2gis.kg/bishkek/firm/70000001053024609"
+                target="blank"
+              >
                 Кыргызстан, г. Бишкек, пр. Чуй 147, офис 1
               </Link>
             </div>
@@ -34,15 +36,17 @@ const Header = () => {
         </div>
         <div className="nav-block">
           <div className="logo-block">
-            <img className="logo" src={Logo} alt="Logo" />
+            <Link to="/">
+              <img className="logo" src={Logo} alt="Logo" />
+            </Link>
           </div>
           <div className="navigation-container">
             <nav className="nav">
-              <Link>Главная</Link>
-              <Link>О компании</Link>
+              <Link to="/About">О компании</Link>
               <Link>Услуги</Link>
               <Link>Партнёры</Link>
               <Link>Контакты</Link>
+              <Link>Поддержка</Link>
             </nav>
           </div>
         </div>
@@ -50,7 +54,6 @@ const Header = () => {
       <div className="secret">
         <div className="secret-message">It's DAGroup baby</div>
         <img className="secret-message" src={Cock} alt="Roach" />
-        <audio src=""></audio>
       </div>
     </header>
   );
