@@ -1,5 +1,5 @@
 .top-slicer{
-    height: 100px;
+    height: 75px;
     width: 1px;
     margin: 0 50% 0 50%;
     background-color: #0082b8;
@@ -45,7 +45,7 @@
 
 .bottom-slicer{
     background: linear-gradient(90deg, rgba(3,78,162,1) 0%, rgba(2,98,170,0.7791491596638656) 64%, rgba(0,130,184,1) 100%);
-    height: 100px;
+    height: 75px;
     width: 2px;
     margin: 0 50% 0 50%;
     display: flex;

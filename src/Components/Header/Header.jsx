@@ -39,7 +39,7 @@ const Header = () => {
                     <Link to="/About">О компании</Link>
                     <Link>Услуги</Link>
                     <Link>Партнёры</Link>
-                    <Link>Контакты</Link>
+                    <Link to="/Contacts">Контакты</Link>
                     <Link>Поддержка</Link>
                 </nav>
             </div>

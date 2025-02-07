@@ -1,0 +1,148 @@
+.content-section{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.content-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    gap: 70px;
+    text-align: center;
+    padding: 5%;
+}
+
+.content-left-block{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    gap: 30px;
+    padding: 2%;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.content-left-block a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+
+.content-right-block{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 2%;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.content-right-block a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+
+.system-integration-block{
+    -webkit-box-shadow: 0px 0px 45px -24px rgba(0,0,0,0.96);
+    -moz-box-shadow: 0px 0px 45px -24px rgba(0,0,0,0.96);
+    box-shadow: 0px 0px 45px -24px rgba(0,0,0,0.96);
+    padding: 5%;
+    width: 100%;
+    height: 40vh;
+    border-radius: 10px;
+}
+
+.system-integration{
+    display: block;
+    width: 100%;
+    background-image: url(../../Assets/system-Integration.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.system-integration p{
+    margin-top: 0.7%;
+}
+
+.techsupport-services-block{
+    -webkit-box-shadow: 0px 0px 45px -24px rgba(0,0,0,0.96);
+    -moz-box-shadow: 0px 0px 45px -24px rgba(0,0,0,0.96);
+    box-shadow: 0px 0px 45px -24px rgba(0,0,0,0.96);
+    padding: 5%;
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+}
+
+.techsupport-services{
+    display: block;
+    width: 100%;
+    background-image: url(../../Assets/techsupport.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.techsupport-services p{
+    margin-top: 0.7%;
+}
+
+.templates-system-management-block{
+    -webkit-box-shadow: 0px 0px 45px -24px rgba(0,0,0,0.96);
+    -moz-box-shadow: 0px 0px 45px -24px rgba(0,0,0,0.96);
+    box-shadow: 0px 0px 45px -24px rgba(0,0,0,0.96);
+    padding: 5%;
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+}
+
+.templates-system-management{
+    display: block;
+    width: 100%;
+    background-image: url(../../Assets/templates-sysrem-management.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.templates-system-management p{
+    margin-top: 0.7%;
+}
+
+.development-modernization-block{
+    -webkit-box-shadow: 0px 0px 45px -24px rgba(0,0,0,0.96);
+    -moz-box-shadow: 0px 0px 45px -24px rgba(0,0,0,0.96);
+    box-shadow: 0px 0px 45px -24px rgba(0,0,0,0.96);
+    padding: 5%;
+    width: 100%;
+    height: 40vh;
+    border-radius: 10px;
+}
+
+.development-modernization{
+    display: block;
+    width: 100%;
+    background-image: url(../../Assets/development-modernization.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.development-modernization p{
+    margin-top: 0.7%;
+}
