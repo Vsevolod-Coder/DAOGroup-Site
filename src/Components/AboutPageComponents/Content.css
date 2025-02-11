@@ -31,6 +31,9 @@
 
 .content-slider-block {
   width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content-slicer {
