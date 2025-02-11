@@ -1,0 +1,68 @@
+
+.contacts-content-wrapper{
+    padding: 5%;
+}
+
+.contacts-title{
+    text-align: center;
+    cursor: default;
+}
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;  
+    font-weight: 400;
+}
+
+.contacts-cards{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin: 5% 0 0 0;
+}
+
+.phone-icon{
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.contacts-icon{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.icon-block{
+    -webkit-box-shadow: 4px -56px 111px -49px rgba(0,0,0,0.96);
+    -moz-box-shadow: 4px -56px 111px -49px rgba(0,0,0,0.96);
+    box-shadow: 4px -56px 111px -49px rgba(0,0,0,0.96);
+    width: 100px;
+    height: 100px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(243, 243, 243);
+    z-index: 1;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text{
+    -webkit-box-shadow: 4px 85px 113px -34px rgba(0,0,0,0.96);
+    -moz-box-shadow: 4px 85px 113px -34px rgba(0,0,0,0.96);
+    box-shadow: 4px 85px 113px -34px rgba(0,0,0,0.96);
+    width: 250px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
