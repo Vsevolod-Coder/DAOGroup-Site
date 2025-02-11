@@ -19,6 +19,18 @@ h2{
     justify-content: center;
     gap: 150px;
     margin: 5% 0 0 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;  
+}
+
+.contacts-cards a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.contacts-cards a:hover{
+    color: #b4cae3;
+    transition: 0.5s;
 }
 
 .phone-icon{
@@ -30,6 +42,7 @@ h2{
     width: 50px;
     height: 50px;
     cursor: pointer;
+    color: #ffffff;
 }
 
 .icon-block{
@@ -41,10 +54,10 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    background-color: rgb(243, 243, 243);
+    border-radius: 48%;
+    background-color: #034ea2;
+    /* border: 1px solid #034ea2; */
     z-index: 1;
-
 }
 
 .card{
@@ -65,4 +78,26 @@ h2{
     justify-content: center;
     text-align: center;
     border-radius: 10px;
+}
+
+.schedule-text{
+    cursor: default;
+}
+
+.employee-card a{
+    color: #034ea2;
+}
+
+.employee-card a:hover{
+    color: #000000;
+    transition: 1s;
+}
+
+.employee-page{
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.employee-text{
+    cursor: default;
 }
