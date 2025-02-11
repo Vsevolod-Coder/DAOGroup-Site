@@ -5,6 +5,8 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { CiClock1 } from "react-icons/ci";
 import { IoMdContact } from "react-icons/io";
 import Layout from "../../Layout/Layout";
+import { Link } from 'react-router';
+import MapComponent from '../../Components/Map/Map';
 
 const ContactsPage = () => {
   const [visibleCard, setVisibleCard] = useState(null);
@@ -23,7 +25,6 @@ const ContactsPage = () => {
               <h2>Связаться с нами</h2>
             </div>
             <div className='contacts-cards'>
-              {/* Email */}
               <div className="email-card card">
                 <div 
                   className='email-icon-block icon-block' 
@@ -38,11 +39,9 @@ const ContactsPage = () => {
                   onMouseLeave={() => hideCard("email")}
                   style={{ visibility: visibleCard === "email" ? "visible" : "hidden" }}
                 >
-                  <p>info@daogroup.pro</p>
+                  <Link to='mailto:info@daogroup.pro'>info@daogroup.pro</Link>
                 </div>
               </div>
-              
-              {/* Phone */}
               <div className="phone-card card">
                 <div 
                   className='phone-icon-block icon-block' 
@@ -57,11 +56,9 @@ const ContactsPage = () => {
                   onMouseLeave={() => hideCard("phone")}
                   style={{ visibility: visibleCard === "phone" ? "visible" : "hidden" }}
                 >
-                  <p>+996 (312) 900 200</p>
+                  <Link to="tel:+996312900200">+996 (312) 900 200</Link>
                 </div>
               </div>
-
-              {/* Schedule */}
               <div className="schedule-card card">
                 <div 
                   className='schedule-icon-block icon-block' 
@@ -76,11 +73,9 @@ const ContactsPage = () => {
                   onMouseLeave={() => hideCard("schedule")}
                   style={{ visibility: visibleCard === "schedule" ? "visible" : "hidden" }}
                 >
-                  <p>ПН-ПТ 9:00-18:00 <br/> СБ-ВС выходной</p>
+                  <p className='schedule-text'>ПН-ПТ 9:00-18:00 <br/> СБ-ВС выходной</p>
                 </div>
               </div>
-
-              {/* Employee */}
               <div className="employee-card card">
                 <div 
                   className='employee-icon-block icon-block' 
@@ -95,10 +90,12 @@ const ContactsPage = () => {
                   onMouseLeave={() => hideCard("employee")}
                   style={{ visibility: visibleCard === "employee" ? "visible" : "hidden" }}
                 >
-                  <p>Контакты наших сотрудников</p>
+                  <p className='employee-text'>Контакты наших <Link className='employee-page'>сотрудников</Link></p>
                 </div>
               </div>
-
+            </div>
+            <div className='map-block'>
+              <MapComponent />
             </div>
           </div>
         </div>
