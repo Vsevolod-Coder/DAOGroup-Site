@@ -1,22 +1,30 @@
 const express = require("express");
 const mysql = require("mysql2");
+const multer = require("multer");
+const path = require("path");
 
 const app = express();
-const port = 3306;
+const port = 5000;
 
-// Настроим JSON-парсер
 app.use(express.json());
 
-// Подключение к базе данных
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, "./uploads");
+  },
+  filename: (req, file, cb) => {
+    cb(null, Date.now() + path.extname(file.originalname));
+  },
+});
+const upload = multer({ storage: storage });
+
 const connection = mysql.createConnection({
-  host: "sql213.infinityfree.com", // Убедитесь, что это правильный хост
-  user: "if0_38288833",
-  password: "12347865a",
-  database: "if0_38288833_dao",
-  port: "3306",
+  host: "MySQL-5.7",
+  user: "root",
+  password: "1234",
+  database: "dao",
 });
 
-// Проверка подключения
 connection.query("SHOW TABLES", (err, results) => {
   if (err) {
     console.error("Ошибка при получении таблиц:", err);
@@ -25,13 +33,10 @@ connection.query("SHOW TABLES", (err, results) => {
   }
 });
 
-// Роутинг
-// Главная страница
 app.get("/", (req, res) => {
   res.send("Добро пожаловать на сервер API!");
 });
 
-// Эндпоинт для получения всех сотрудников
 app.get("/api/employees", (req, res) => {
   const sql = "SELECT * FROM employees";
   connection.query(sql, (err, results) => {
@@ -44,22 +49,43 @@ app.get("/api/employees", (req, res) => {
   });
 });
 
-// Эндпоинт для добавления нового сотрудника
-app.post("/api/employees", (req, res) => {
-  const { name, contacts, image } = req.body;
-  const sql = "INSERT INTO employees (name, contacts, image) VALUES (?, ?, ?)";
+app.post("/api/employees", upload.single("image"), (req, res) => {
+  const { name, contacts, position, image } = req.body;
+  const imageFile = req.file ? req.file.filename : image;
 
-  connection.query(sql, [name, contacts, image], (err, result) => {
-    if (err) {
-      console.error("Ошибка добавления сотрудника:", err);
-      res.status(500).send("Ошибка добавления сотрудника");
-      return;
+  if (!name || !contacts || !position || !imageFile) {
+    return res
+      .status(400)
+      .send(
+        "Все поля (name, contacts, position, image) обязательны для заполнения."
+      );
+  }
+
+  const sql =
+    "INSERT INTO employees (name, contacts, position, image) VALUES (?, ?, ?, ?)";
+
+  connection.query(
+    sql,
+    [name, contacts, position, imageFile],
+    (err, result) => {
+      if (err) {
+        console.error("Ошибка добавления сотрудника:", err);
+        res.status(500).send("Ошибка при добавлении сотрудника");
+        return;
+      }
+      res.status(201).json({
+        id: result.insertId,
+        name,
+        contacts,
+        position,
+        image: imageFile,
+      });
     }
-    res.status(201).json({ id: result.insertId, name, contacts, image });
-  });
+  );
 });
 
-// Запуск сервера
+app.use("/uploads", express.static("uploads"));
+
 app.listen(port, () => {
   console.log(`Сервер работает на порту ${port}`);
 });

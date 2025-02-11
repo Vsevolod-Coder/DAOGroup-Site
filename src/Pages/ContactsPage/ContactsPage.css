@@ -1,103 +1,103 @@
-
-.contacts-content-wrapper{
-    padding: 5%;
+.contacts-content-wrapper {
+  padding: 5%;
 }
 
-.contacts-title{
-    text-align: center;
-    cursor: default;
+.contacts-title {
+  text-align: center;
+  cursor: default;
 }
 
-h2{
-    font-family: "Montserrat", sans-serif;
-    font-size: 40px;  
-    font-weight: 400;
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
 }
 
-.contacts-cards{
-    display: flex;
-    justify-content: center;
-    gap: 150px;
-    margin: 5% 0 0 0;
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;  
+.contacts-cards {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin: 5% 0 0 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding-bottom: 5%;
 }
 
-.contacts-cards a{
-    text-decoration: none;
-    color: #000000;
+.contacts-cards a {
+  text-decoration: none;
+  color: #000000;
 }
 
-.contacts-cards a:hover{
-    color: #b4cae3;
-    transition: 0.5s;
+.contacts-cards a:hover {
+  color: #b4cae3;
+  transition: 0.5s;
 }
 
-.phone-icon{
-    width: 40px !important;
-    height: 40px !important;
+.phone-icon {
+  width: 40px !important;
+  height: 40px !important;
 }
 
-.contacts-icon{
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    color: #ffffff;
+.contacts-icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  color: #ffffff;
 }
 
-.icon-block{
-    -webkit-box-shadow: 4px -56px 111px -49px rgba(0,0,0,0.96);
-    -moz-box-shadow: 4px -56px 111px -49px rgba(0,0,0,0.96);
-    box-shadow: 4px -56px 111px -49px rgba(0,0,0,0.96);
-    width: 100px;
-    height: 100px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 48%;
-    background-color: #034ea2;
-    /* border: 1px solid #034ea2; */
-    z-index: 1;
+.icon-block {
+  -webkit-box-shadow: 4px -56px 111px -49px rgba(0, 0, 0, 0.96);
+  -moz-box-shadow: 4px -56px 111px -49px rgba(0, 0, 0, 0.96);
+  box-shadow: 4px -56px 111px -49px rgba(0, 0, 0, 0.96);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 48%;
+  background-color: #034ea2;
+  /* border: 1px solid #034ea2; */
+  z-index: 1;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-text{
-    -webkit-box-shadow: 4px 85px 113px -34px rgba(0,0,0,0.96);
-    -moz-box-shadow: 4px 85px 113px -34px rgba(0,0,0,0.96);
-    box-shadow: 4px 85px 113px -34px rgba(0,0,0,0.96);
-    width: 250px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 10px;
+.card-text {
+  -webkit-box-shadow: 4px 85px 113px -34px rgba(0, 0, 0, 0.96);
+  -moz-box-shadow: 4px 85px 113px -34px rgba(0, 0, 0, 0.96);
+  box-shadow: 4px 85px 113px -34px rgba(0, 0, 0, 0.96);
+  width: 250px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
 }
 
-.schedule-text{
-    cursor: default;
+.schedule-text {
+  cursor: default;
 }
 
-.employee-card a{
-    color: #034ea2;
+.employee-card a {
+  color: #034ea2;
 }
 
-.employee-card a:hover{
-    color: #000000;
-    transition: 1s;
+.employee-card a:hover {
+  color: #000000;
+  transition: 1s;
 }
 
-.employee-page{
-    cursor: pointer;
-    font-weight: 600;
+.employee-page {
+  cursor: pointer;
+  font-weight: 600;
 }
 
-.employee-text{
-    cursor: default;
+.employee-text {
+  cursor: default;
 }
