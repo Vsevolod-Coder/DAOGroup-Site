@@ -5,11 +5,20 @@ header{
 }
 
 .header_wrapper{
+    -webkit-box-shadow: 0px 0px 45px -14px rgba(0,0,0,0.96);
+    -moz-box-shadow: 0px 0px 45px -14px rgba(0,0,0,0.96);
+    box-shadow: 0px 0px 45px -14px rgba(0,0,0,0.96);
     position: fixed;
     width: 100%;
     background-color: #ffffff;
     z-index: 100000;
     border-bottom: 1px solid #034ea2;
+}
+
+.header-line{
+    background: rgb(14,178,205);
+    background: linear-gradient(90deg, rgba(14,178,205,1) 0%, rgba(4,55,136,1) 100%);
+    height: 30px;
 }
 
 .secret-message{
@@ -47,101 +56,6 @@ header{
     100%{
         color: green;
     }
-}
-
-.header-top_section{
-    background-color: #034ea2;
-    padding: 0.547% 0 0.547% 0;
-}
-
-.header-top_section_wrapper {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    max-width: 1700px;
-    margin: 0 auto; 
-}
-
-
-/* Address block styles */
-.map-marker{
-    color: #b4cae3;
-}
-
-.address-block{
-    display: flex;
-    align-items: center;
-}
-
-.address-block a {
-    text-decoration: none;
-    color: #b4cae3;
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-    transition: 0.5s;
-}
-
-.address-block a:hover{
-    color: #ffffff;
-}
-
-/* Contacts container styles   */
-.contacts-container {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    color: #b4cae3;
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-}
-
-.contacts-container a {
-    text-decoration: none;
-    color: #b4cae3;
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-}
-
-.contacts-container p {
-    margin: 0;
-}
-
-.mail-block{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.mail{
-    color: #b4cae3;
-    width: 18px;
-    height: 18px;
-}
-
-.mail-block a{
-    transition: 0.5s;
-}
-
-.mail-block a:hover{
-    color: #ffffff;
-}
-
-.phone-block{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.phone{
-    color: #b4cae3;
-}
-
-.phone-block a:hover{
-    color: #ffffff;
-}
-
-.phone-block a{
-    transition: 0.5s;
 }
 
 /* Navigation styles */
