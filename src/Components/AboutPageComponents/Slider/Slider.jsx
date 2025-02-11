@@ -53,10 +53,6 @@ const Slider = () => {
   return (
     <section className="slider-container">
         <div className="top-slicer"></div>
-        <div className="letters-container">
-            <h2 className="letters-title">Отзывы наших партнёров</h2>
-        </div>
-        <div className="top-slicer"></div>
         <Swiper
             loop="true"
             autoplay={{

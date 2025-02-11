@@ -3,6 +3,7 @@ import './App.css';
 import { Route, Routes } from 'react-router';
 import MainPage from './Pages/MainPage/MainPage';
 import AboutPage from './Pages/AboutPage/AboutPage';
+import ContactsPage from './Pages/ContactsPage/ContactsPage';
 
 
 
@@ -12,6 +13,7 @@ function App() {
     <Routes>
       <Route path='/' element={<MainPage />}/>
       <Route path="/About" element={<AboutPage />}/>
+      <Route path='/Contacts' element={<ContactsPage />}/>
     </Routes>
   );
 };

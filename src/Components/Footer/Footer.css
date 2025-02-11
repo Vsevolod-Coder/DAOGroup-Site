@@ -23,8 +23,10 @@
     cursor: default;
 }
 
-.logo{
+.logo-bottom{
     cursor: default;
+    width: 196.88px;
+    height: 70px;
 }
 
 .footer-logo p{

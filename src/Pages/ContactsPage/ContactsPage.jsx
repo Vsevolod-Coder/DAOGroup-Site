@@ -1,12 +1,15 @@
 import React from 'react'
-import Layout from '../../Layout/Layout';
+import "./ContactsPage.css"
+import Layout from "../../Layout/Layout"
 
 const ContactsPage = () => {
   return (
     <Layout>
-      <div></div>
+        <section>
+        
+        </section>
     </Layout>
-  );
+  )
 }
 
 export default ContactsPage

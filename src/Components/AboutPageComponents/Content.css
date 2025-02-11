@@ -1,4 +1,39 @@
-/* .content-block {
-  display: flex;
-  max-width: 100%;
-} */
+.content-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.content-block{
+    display: flex;
+    width: 85%;
+}
+
+.content-text-block{
+    width: 50%;
+    cursor: default;
+}
+
+.DAOGroup{
+    font-weight: 600;
+}
+
+.partners-link{
+    text-decoration: none;
+    color: #034ea2;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.partners-link:hover{
+    color: black;
+}
+
+.content-slider-block{
+    width: 55%;
+}
+
+.content-slicer{
+    height: 2px;
+    background: linear-gradient(90deg, rgba(3, 78, 162, 1) 0%, rgba(2, 98, 170, 0.7791491596638656) 64%, rgba(0, 130, 184, 1) 100%);
+    margin: 0 0 10px 0;
+}

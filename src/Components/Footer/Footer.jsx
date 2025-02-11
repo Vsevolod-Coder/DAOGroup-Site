@@ -19,7 +19,7 @@ const Footer = () => {
           <div className='footer-wrapper-block'>
             <div className='footer-wrapper'>
               <div className='footer-logo'>
-                <img src={Logo} alt="Logo" className='logo'/>
+                <img src={Logo} alt="Logo" className='logo-bottom'/>
                 <p>Предоставляем широкий ассортимент услуг по разработке и внедрению всех видов инновационных технологий для вашего бизнеса.</p>
               </div>
               <div className='footer-contacts'>

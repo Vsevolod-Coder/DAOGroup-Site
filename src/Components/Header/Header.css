@@ -152,6 +152,11 @@ header{
     max-width: 1700px;
     margin: 0 auto;
     padding: 1% 0 1% 0;
+
+}
+
+.logo-block{
+    cursor: pointer;
 }
 
 .logo{

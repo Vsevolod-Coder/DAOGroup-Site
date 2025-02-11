@@ -35,20 +35,18 @@ const Header = () => {
           </div>
         </div>
         <div className="nav-block">
-          <div className="logo-block">
-            <Link to="/">
-              <img className="logo" src={Logo} alt="Logo" />
-            </Link>
-          </div>
-          <div className="navigation-container">
-            <nav className="nav">
-              <Link to="/About">О компании</Link>
-              <Link>Услуги</Link>
-              <Link>Партнёры</Link>
-              <Link>Контакты</Link>
-              <Link>Поддержка</Link>
-            </nav>
-          </div>
+            <div className="logo-block">
+                <Link to="/"><img className="logo" src={Logo} alt="Logo" /></Link>
+            </div>
+            <div className="navigation-container">
+                <nav className="nav">
+                    <Link to="/About">О компании</Link>
+                    <Link>Услуги</Link>
+                    <Link>Партнёры</Link>
+                    <Link to="/Contacts">Контакты</Link>
+                    <Link>Поддержка</Link>
+                </nav>
+            </div>
         </div>
       </section>
       <div className="secret">
