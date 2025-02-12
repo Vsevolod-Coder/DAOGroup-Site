@@ -1,0 +1,22 @@
+.services-details-banner_block {
+  width: 100%;
+  height: 300px;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.services-details-wrapper {
+  max-width: 85%;
+  margin-left: 8%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5%;
+}
+
+.services-details_description {
+  width: 60%;
+  padding: 3% 0 3% 0;
+}

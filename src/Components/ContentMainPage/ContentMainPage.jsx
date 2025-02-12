@@ -39,7 +39,7 @@ const ContentMainPage = () => {
           data.map((item, index) => {
             return (
               <Link
-                to={`/Services/${item.id}`}
+                to={`/Services/${item.slug}`}
                 key={item.id}
                 className="services-card"
                 onMouseEnter={() => {

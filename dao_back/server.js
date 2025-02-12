@@ -2,12 +2,19 @@ const express = require("express");
 const mysql = require("mysql2");
 const multer = require("multer");
 const path = require("path");
-
+const cors = require("cors");
 const app = express();
 const port = 5000;
 
 // Настроим JSON-парсер для обработки raw (JSON) данных
 app.use(express.json());
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 
 // Настроим multer для обработки form-data
 const storage = multer.diskStorage({
@@ -22,10 +29,10 @@ const upload = multer({ storage: storage });
 
 // Подключение к базе данных
 const connection = mysql.createConnection({
-  host: "MySQL-5.7",
-  user: "root",
-  password: "1234",
-  database: "dao",
+  host: "mysql-daogroup.alwaysdata.net",
+  user: "daogroup",
+  password: "12347865a",
+  database: "daogroup_db",
 });
 
 // Проверка подключения
@@ -85,11 +92,11 @@ app.post(
   }
 );
 
-// Пример маршрута на сервере Express
-app.get("/api/services/:id", (req, res) => {
-  const { id } = req.params; // Получаем id из URL
-  const sql = "SELECT * FROM services WHERE id = ?";
-  connection.query(sql, [id], (err, results) => {
+// Пример маршрута на сервере Express для получения сервиса по slug
+app.get("/api/services/:slug", (req, res) => {
+  const { slug } = req.params; // Получаем slug из URL
+  const sql = "SELECT * FROM services WHERE slug = ?"; // Меняем на поиск по slug
+  connection.query(sql, [slug], (err, results) => {
     if (err) {
       console.error("Ошибка при получении сервиса:", err);
       res.status(500).send("Ошибка при получении сервиса");
